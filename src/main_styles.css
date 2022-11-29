@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+    /* color Primary */
+
+    --Red: hsl(0, 100%, 74%); 
+    --Green: hsl(154, 59%, 51%);
+
+    /* Accent */
+
+    --Blue: hsl(248, 32%, 49%);
+
+    /* Neutral */
+    --DarkBlue: hsl(249, 10%, 26%); 
+    --GrayishBlue: hsl(246, 25%, 77%);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    background-image: url(images/bg-intro-desktop.png);
+    background-size: contain;
+    background-color: var(--Red);
+    display: grid;
+    align-items: center;
+}
+.container{
+    display: flex;
+    max-width: 1152px;
+    margin: auto;
+}
+.left-contain-wrapper{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-contain-wrapper h1{
+    font-size: 50px;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+}
+.left-contain-wrapper p{
+    color: whitesmoke;
+    margin-bottom: 1rem;
+}
+.right-contain-wrapper{
+    flex: 1;
+
+}
+
+.right-contain-wrapper .message{
+    width: 100%;
+    background-color: var(--Blue);
+    color: whitesmoke;
+    box-shadow: 0px 9px 0px #00000036;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.message h3 span{
+    font-weight: 400;
+}
+
+.right-contain-wrapper .form-wrapper{
+    width: 100%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0px 9px 0px #00000036;
+}
+
+.form-wrapper .input{
+    width: 100%;
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    border: none;
+    border: 1px solid var(--GrayishBlue);
+
+}
+.form-wrapper .input:not(.input[placeholder="First Name"]) {
+    margin-top: 1rem;
+}
+
+.form-wrapper .btn{
+    width: 100%;
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: var(--Green);
+    border-radius: .5rem;
+    box-shadow: 0px 5px 0px hsl(154, 57%, 30%);
+    margin: 1rem 0;
+    border: none;
+    font-weight: bold;
+    transition: none;
+    cursor: pointer;
+}
+.btn:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+    transition: none;
+}
+.form-wrapper p{
+    text-align: center;
+    color: var(--GrayishBlue);
+    font-size: 12px;
+}
+.form-wrapper p span{
+    color: var(--Red);
+}
+
+.checking{
+    color: var(--Red);
+    font-size: .8rem;
+    float: right;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.input:focus:invalid { /* when a field is considered invalid by the browser */
+    background: #fff url(images/icon-error.svg) no-repeat 95% center;
+    /* box-shadow: 0 0 5px #d45252; */
+    border-color: var(--Red);
+	transition: none;
+}
+
+.invalid{
+    background: #fff url(images/icon-error.svg) no-repeat 95% center;
+    border-color: var(--Red) !important;
+    transition: none;
+}

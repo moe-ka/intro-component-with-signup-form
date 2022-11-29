@@ -1,0 +1,48 @@
+@media (min-width: 1000px) {
+    body{
+        height: 100vh;
+    }
+    .left-contain-wrapper h1{
+        line-height: 54px;
+    }
+    .left-contain-wrapper{
+        padding-right: 1rem;
+    }
+    .form-wrapper .input{
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container{
+        margin: 2rem 1rem;
+        flex-direction: column;
+    }
+}
+@media (max-width: 670px) {
+    body{
+        background-image: url(images/bg-intro-mobile.png);
+    }
+    
+    .left-contain-wrapper{
+        text-align: center;
+    }
+    
+    .left-contain-wrapper h1{
+        font-size: 28px;
+    }
+    
+    .left-contain-wrapper p{
+        font-size: 14px;
+    }
+    .form-wrapper .input{
+        font-size: 12px;
+    }
+    .form-wrapper button[type="submit"]{
+    font-size: 14px;
+    }
+  
+    .message h3{
+        font-size: 14px;
+    }
+}
